@@ -11,8 +11,20 @@ public class App {
     public static void runBubbleSort() {
         //Instanciamos la clase 
         System.out.println("Metodo burbuja" );
-        BubbleSort bubbleSort = new BubbleSort();
+        int [] numeros = {-5, 10, 2, 0, 7};
         
 
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.printArreglo (numeros);
+        // bubbleSort.sortAscendente(numeros);
+        // bubbleSort.printArreglo (numeros);
+        // bubbleSort.sortDescendente(numeros);
+        // bubbleSort.printArreglo (numeros);
+
+        bubbleSort.sort(numeros, true);
+        bubbleSort.printArreglo (numeros);
+        bubbleSort.sort(numeros, false);
+        bubbleSort.printArreglo (numeros);
     }
 }
+    

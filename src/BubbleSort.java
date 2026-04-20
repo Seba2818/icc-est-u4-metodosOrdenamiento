@@ -1,6 +1,7 @@
 public class BubbleSort {
 
     public BubbleSort() {
+System.out.println("Se creo la clase en el constructor");
     }
 
 
@@ -9,9 +10,9 @@ public class BubbleSort {
             for (int j = i+1 ; j < numeros.length; i++) {
 
                 if (numeros[i] > numeros[j]) {
-                    int temp = numeros[i];
+                    int aux = numeros[i];
                     numeros[i] = numeros[j];
-                    numeros[j] = temp;
+                    numeros[j] = aux;
                 }
             }
 
